@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Sorte</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <p class="navbar-brand">
+                    Nome da Sorte
+                </p>
+                <div>
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                      <div class="ball"></div>
+                    </label>
+                  </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card">
+                <h1 class="titulo">Sorteio de Nomes</h1>
+                <p class="quantidade">
+                    <strong>Sortear</strong> <input type="number" name="quantidade" id="quant" value="1"> <strong>nome</strong>
+                </p>
+                <div class="center-container"> 
+                    <div class="textarea-container">
+                        <span class="textarea-content" contenteditable="true" placeholder="Digite um nome por linha."></span>
+                    </div>
+                </div>
+    
+                <div class="botao">
+                    <input type="button" value="Sortear" onclick="sortear()">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+</html>
