@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
-                <p class="navbar-brand">
+                <p class="navtitle navbar-brand">
                     Nome da Sorte
                 </p>
                 <div>
@@ -31,17 +31,13 @@
             <div class="card">
                 <h1 class="titulo">Sorteio de Nomes</h1>
                 <p class="quantidade">
-                    <strong>Sortear</strong> <input type="number" name="quantidade" id="quant" value="1"> <strong>nome</strong>
+                    <strong>Sortear</strong> <input type="number" name="quantidade" id="quantidade" value="1"> <strong>nome</strong>
                 </p>
                 <div class="center-container"> 
-                    <div class="textarea-container">
-                        <span class="textarea-content" contenteditable="true" placeholder="Digite um nome por linha."></span>
-                    </div>
+                    <textarea id="nomes" rows="10" cols="30" placeholder="Digite um nome por linha."></textarea>
                 </div>
-    
-                <div class="botao">
-                    <input type="button" value="Sortear" onclick="sortear()">
-                </div>
+                <button id="sortear">Sortear</button>
+                <p id="resultado"></p>
             </div>
         </div>
     </main>

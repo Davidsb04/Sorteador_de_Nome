@@ -1,3 +1,8 @@
+@media screen and (max-width: 600px) {
+    .card {
+      max-width: 100%;
+    }
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -5,8 +10,13 @@
     background-color: #f5f5f5;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    font: normal 10pt arial;
 }
+
+.navtitle{
+    font-size: 30px !important;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif !important;
+}   
 
 .icon{
     font-size: 2rem; 
@@ -44,7 +54,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 50px;
 }
-#quant{
+#quantidade{
     border-radius: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -67,7 +77,7 @@ input[type="number"]::-webkit-outer-spin-button {
     justify-content: center;
 }
 
-.textarea-container {
+#nomes {
     width: 400px;
     height: 200px;
     border: 1px solid #ccc;
@@ -77,20 +87,7 @@ input[type="number"]::-webkit-outer-spin-button {
     border-radius: 5px;
 }
 
-.textarea-content {
-    outline: none;
-    height: 100%;
-    width: 100%;
-    resize: none;
-    border: none;
-    background: transparent;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-    white-space: pre-wrap;
-}
-
-input[type="button"] {
+#sortear {
     background-color: black;
     color: white;
     padding: 10px 20px;
@@ -98,6 +95,14 @@ input[type="button"] {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 13px;
+}
+
+#resultado{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ALTERAR TEMA */
